@@ -41,7 +41,7 @@ void merge(vector<int>&arr,int left, int mid, int right){
         temp.push_back(arr[j]);
         j++;
     }
-    for(int index=left;index<(int)temp.size();index++){
-        arr[index]=temp[index];
+    for(int index=0;index<(int)temp.size();index++){
+        arr[index+left]=temp[index];
     }
 }
